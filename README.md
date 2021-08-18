@@ -14,3 +14,6 @@
 - Use github [iOSCaseStudy](https://github.com/yogtech25/yogtech25) link for download app code.
 - After download project open iOSCaseStudy/iOSCaseStudy.xcodeproj in xcode
 - Run this app using xcode
+
+## Contact on email
+- yogtechdev256@gmail.com
