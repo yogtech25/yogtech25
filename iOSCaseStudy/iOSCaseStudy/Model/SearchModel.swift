@@ -12,7 +12,7 @@ struct WebResponse: Codable {
 }
     
 struct WebData: Codable {
-    let trackId: Int
+    var trackId: Int
     var trackName, artistName, artworkUrl60 :String
     
     enum CodingKeys: String, CodingKey {
