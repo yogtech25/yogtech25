@@ -25,6 +25,7 @@
 		18C1AF4926CD16C00098D252 /* ITuneSearchListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C1AF4726CD16C00098D252 /* ITuneSearchListViewControllerTests.swift */; };
 		18C1AF9F26CD350E0098D252 /* ITuneSearchListViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C1AF9D26CD350E0098D252 /* ITuneSearchListViewControllerUITests.swift */; };
 		18C1AFA026CD350E0098D252 /* DetailViewControllersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C1AF9E26CD350E0098D252 /* DetailViewControllersTests.swift */; };
+		18C1AFAB26CD56D90098D252 /* CellITuneSearchListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C1AFAA26CD56D90098D252 /* CellITuneSearchListTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		18C1AF4726CD16C00098D252 /* ITuneSearchListViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ITuneSearchListViewControllerTests.swift; sourceTree = "<group>"; };
 		18C1AF9D26CD350E0098D252 /* ITuneSearchListViewControllerUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ITuneSearchListViewControllerUITests.swift; sourceTree = "<group>"; };
 		18C1AF9E26CD350E0098D252 /* DetailViewControllersTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewControllersTests.swift; sourceTree = "<group>"; };
+		18C1AFAA26CD56D90098D252 /* CellITuneSearchListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellITuneSearchListTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 				18C1AF4626CD16C00098D252 /* DetailsViewControllerTests.swift */,
 				18C1AF4726CD16C00098D252 /* ITuneSearchListViewControllerTests.swift */,
 				18728C5826CBFB38001BC39D /* iOSCaseStudyTests.swift */,
+				18C1AFAA26CD56D90098D252 /* CellITuneSearchListTests.swift */,
 				18728C5A26CBFB38001BC39D /* Info.plist */,
 			);
 			path = iOSCaseStudyTests;
@@ -371,6 +374,7 @@
 				18C1AF4826CD16C00098D252 /* DetailsViewControllerTests.swift in Sources */,
 				18728C5926CBFB38001BC39D /* iOSCaseStudyTests.swift in Sources */,
 				18C1AF4926CD16C00098D252 /* ITuneSearchListViewControllerTests.swift in Sources */,
+				18C1AFAB26CD56D90098D252 /* CellITuneSearchListTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

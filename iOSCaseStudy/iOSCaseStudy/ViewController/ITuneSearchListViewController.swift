@@ -45,11 +45,13 @@ extension ITuneSearchListViewController: UITableViewDelegate, UITableViewDataSou
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = self.tableView.dequeueReusableCell(withIdentifier: SDConstant().cellITuneSearchList) as! CellITuneSearchList
-        if let model = self.webListData?[indexPath.row] {
-            cell.setUpData(model: model)
+        if let cell = self.tableView.dequeueReusableCell(withIdentifier: SDConstant().cellITuneSearchList) as? CellITuneSearchList {
+            if let model = self.webListData?[indexPath.row] {
+                cell.setUpData(model: model)
+            }
+            return cell
         }
-        return cell
+        return UITableViewCell()
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
