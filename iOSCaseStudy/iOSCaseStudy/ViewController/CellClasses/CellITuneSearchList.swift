@@ -2,6 +2,7 @@
 //  Created by rails on 17/08/21.
 //
 
+
 import UIKit
 
 class CellITuneSearchList: UITableViewCell {
@@ -18,31 +19,16 @@ class CellITuneSearchList: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
     
+    // MARK: Setup cell data
     func setUpData(model: WebData) {
         self.nameLabel.text = model.trackName
         self.thumbnailImage.load(urlString: model.artworkUrl60)
-        if let array = UserDefaults.standard.value(forKey: "visitedWeb") as? [Int] {
+        
+        if let array = UserDefaults.standard.value(forKey: SDConstant().visitedWeb) as? [Int] {
             if array.contains(model.trackId) {
                 self.nameLabel.textColor = UIColor.gray
             } else {
-                self.nameLabel.textColor = UIColor.blue
-            }
-        }
-    }
-}
-
-extension UIImageView {
-    func load(urlString : String) {
-        guard let url = URL(string: urlString)else {
-            return
-        }
-        DispatchQueue.global().async { [weak self] in
-            if let data = try? Data(contentsOf: url) {
-                if let image = UIImage(data: data) {
-                    DispatchQueue.main.async {
-                        self?.image = image
-                    }
-                }
+                self.nameLabel.textColor = UIColor.black
             }
         }
     }

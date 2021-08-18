@@ -4,16 +4,16 @@
 
 import Foundation
 
-private typealias APIResponseHandler = (_ data: WebResponse?, _ error : Error?)  -> Void
+private typealias APIResponseHandler = (_ data: SearchResponse?, _ error : Error?)  -> Void
 
 class ITuneService {
     
-    func fetchWebList(_ completionHandler: @escaping (_ brands: WebResponse?, _ error: NSError?) -> Void) {
+    func fetchWebList(_ completionHandler: @escaping (_ brands: SearchResponse?, _ error: NSError?) -> Void) {
         var request = URLRequest(url: URL(string: SDConstant().searchUrl)!)
         request.httpMethod = "GET"
         URLSession.shared.dataTask(with: request, completionHandler: { data, response, error -> Void in
             do {
-                let picture = try JSONDecoder().decode(WebResponse.self, from: data!)
+                let picture = try JSONDecoder().decode(SearchResponse.self, from: data!)
                 completionHandler(picture, nil)
             } catch {
                 completionHandler(nil, error as NSError)

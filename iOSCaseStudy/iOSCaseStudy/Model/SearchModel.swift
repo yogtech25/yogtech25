@@ -3,7 +3,7 @@
 //
 import Foundation
 
-struct WebResponse: Codable {
+struct SearchResponse: Codable {
     let webs: [WebData]
     
     enum CodingKeys: String, CodingKey {

@@ -12,7 +12,7 @@
 		18728C6426CBFB38001BC39D /* iOSCaseStudyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18728C6326CBFB38001BC39D /* iOSCaseStudyUITests.swift */; };
 		18C1AF1A26CCEAEA0098D252 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C1AF1826CCEAEA0098D252 /* AppDelegate.swift */; };
 		18C1AF1B26CCEAEA0098D252 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C1AF1926CCEAEA0098D252 /* SceneDelegate.swift */; };
-		18C1AF2126CCF0000098D252 /* WebModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C1AF2026CCF0000098D252 /* WebModel.swift */; };
+		18C1AF2126CCF0000098D252 /* SearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C1AF2026CCF0000098D252 /* SearchModel.swift */; };
 		18C1AF3526CCF00E0098D252 /* ITuneService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C1AF2626CCF00E0098D252 /* ITuneService.swift */; };
 		18C1AF3626CCF00E0098D252 /* CellITuneSearchList.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18C1AF2926CCF00E0098D252 /* CellITuneSearchList.xib */; };
 		18C1AF3726CCF00E0098D252 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C1AF2A26CCF00E0098D252 /* LaunchScreen.storyboard */; };
@@ -21,6 +21,10 @@
 		18C1AF3A26CCF00E0098D252 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C1AF3126CCF00E0098D252 /* DetailViewController.swift */; };
 		18C1AF3B26CCF00E0098D252 /* ITuneSearchListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C1AF3226CCF00E0098D252 /* ITuneSearchListViewController.swift */; };
 		18C1AF3C26CCF00E0098D252 /* SDConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C1AF3426CCF00E0098D252 /* SDConstants.swift */; };
+		18C1AF4826CD16C00098D252 /* DetailsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C1AF4626CD16C00098D252 /* DetailsViewControllerTests.swift */; };
+		18C1AF4926CD16C00098D252 /* ITuneSearchListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C1AF4726CD16C00098D252 /* ITuneSearchListViewControllerTests.swift */; };
+		18C1AF9F26CD350E0098D252 /* ITuneSearchListViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C1AF9D26CD350E0098D252 /* ITuneSearchListViewControllerUITests.swift */; };
+		18C1AFA026CD350E0098D252 /* DetailViewControllersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C1AF9E26CD350E0098D252 /* DetailViewControllersTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +56,7 @@
 		18728C6526CBFB38001BC39D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18C1AF1826CCEAEA0098D252 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18C1AF1926CCEAEA0098D252 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		18C1AF2026CCF0000098D252 /* WebModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebModel.swift; sourceTree = "<group>"; };
+		18C1AF2026CCF0000098D252 /* SearchModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchModel.swift; sourceTree = "<group>"; };
 		18C1AF2626CCF00E0098D252 /* ITuneService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ITuneService.swift; sourceTree = "<group>"; };
 		18C1AF2926CCF00E0098D252 /* CellITuneSearchList.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CellITuneSearchList.xib; sourceTree = "<group>"; };
 		18C1AF2B26CCF00E0098D252 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -61,6 +65,10 @@
 		18C1AF3126CCF00E0098D252 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		18C1AF3226CCF00E0098D252 /* ITuneSearchListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ITuneSearchListViewController.swift; sourceTree = "<group>"; };
 		18C1AF3426CCF00E0098D252 /* SDConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDConstants.swift; sourceTree = "<group>"; };
+		18C1AF4626CD16C00098D252 /* DetailsViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewControllerTests.swift; sourceTree = "<group>"; };
+		18C1AF4726CD16C00098D252 /* ITuneSearchListViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ITuneSearchListViewControllerTests.swift; sourceTree = "<group>"; };
+		18C1AF9D26CD350E0098D252 /* ITuneSearchListViewControllerUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ITuneSearchListViewControllerUITests.swift; sourceTree = "<group>"; };
+		18C1AF9E26CD350E0098D252 /* DetailViewControllersTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewControllersTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +134,8 @@
 		18728C5726CBFB38001BC39D /* iOSCaseStudyTests */ = {
 			isa = PBXGroup;
 			children = (
+				18C1AF4626CD16C00098D252 /* DetailsViewControllerTests.swift */,
+				18C1AF4726CD16C00098D252 /* ITuneSearchListViewControllerTests.swift */,
 				18728C5826CBFB38001BC39D /* iOSCaseStudyTests.swift */,
 				18728C5A26CBFB38001BC39D /* Info.plist */,
 			);
@@ -135,6 +145,8 @@
 		18728C6226CBFB38001BC39D /* iOSCaseStudyUITests */ = {
 			isa = PBXGroup;
 			children = (
+				18C1AF9E26CD350E0098D252 /* DetailViewControllersTests.swift */,
+				18C1AF9D26CD350E0098D252 /* ITuneSearchListViewControllerUITests.swift */,
 				18728C6326CBFB38001BC39D /* iOSCaseStudyUITests.swift */,
 				18728C6526CBFB38001BC39D /* Info.plist */,
 			);
@@ -153,7 +165,7 @@
 		18C1AF1F26CCF0000098D252 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				18C1AF2026CCF0000098D252 /* WebModel.swift */,
+				18C1AF2026CCF0000098D252 /* SearchModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -347,7 +359,7 @@
 				18C1AF3B26CCF00E0098D252 /* ITuneSearchListViewController.swift in Sources */,
 				18C1AF1B26CCEAEA0098D252 /* SceneDelegate.swift in Sources */,
 				18C1AF3A26CCF00E0098D252 /* DetailViewController.swift in Sources */,
-				18C1AF2126CCF0000098D252 /* WebModel.swift in Sources */,
+				18C1AF2126CCF0000098D252 /* SearchModel.swift in Sources */,
 				18C1AF3526CCF00E0098D252 /* ITuneService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -356,7 +368,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18C1AF4826CD16C00098D252 /* DetailsViewControllerTests.swift in Sources */,
 				18728C5926CBFB38001BC39D /* iOSCaseStudyTests.swift in Sources */,
+				18C1AF4926CD16C00098D252 /* ITuneSearchListViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,6 +378,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18C1AF9F26CD350E0098D252 /* ITuneSearchListViewControllerUITests.swift in Sources */,
+				18C1AFA026CD350E0098D252 /* DetailViewControllersTests.swift in Sources */,
 				18728C6426CBFB38001BC39D /* iOSCaseStudyUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
