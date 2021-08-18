@@ -6,7 +6,7 @@ import Foundation
 import UIKit
 
 class SDConstant{
-    let searchUrl                     = "https://itunes.apple.com/search?term=jack+johnson"
+    let searchUrl                     = "https://itunes.apple.com/search?term=jack+johnson&imit=100"
     let detailViewController          = "DetailViewController"
     let cellITuneSearchList           = "CellITuneSearchList"
     let deleteAlertMessage            = "Are you sure want to delete this detail"

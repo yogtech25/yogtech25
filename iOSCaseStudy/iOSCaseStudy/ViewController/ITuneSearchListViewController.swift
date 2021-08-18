@@ -13,8 +13,13 @@ class ITuneSearchListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        tableView.tableFooterView = UIView(frame: .zero)
         self.tableView.register(UINib(nibName: SDConstant().cellITuneSearchList, bundle: nil), forCellReuseIdentifier: SDConstant().cellITuneSearchList)
-        // API call
+        getITuneService() // API call
+    }
+    
+    // API call
+    func getITuneService() {
         ITuneService().fetchWebList { (brands, error) in
             self.webListData = brands?.webs
             self.addDeletedObjectInUserDefault()

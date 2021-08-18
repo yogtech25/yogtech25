@@ -13,8 +13,12 @@ class ITuneService {
         request.httpMethod = "GET"
         URLSession.shared.dataTask(with: request, completionHandler: { data, response, error -> Void in
             do {
-                let picture = try JSONDecoder().decode(SearchResponse.self, from: data!)
-                completionHandler(picture, nil)
+                if let object = data {
+                    let picture = try JSONDecoder().decode(SearchResponse.self, from: object)
+                    completionHandler(picture, nil)
+                } else {
+                    completionHandler(nil, error as NSError?)
+                }
             } catch {
                 completionHandler(nil, error as NSError)
             }
