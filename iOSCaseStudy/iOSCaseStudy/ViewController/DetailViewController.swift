@@ -15,7 +15,9 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.addWebsiteInVisitedList(trackId: webListData?.trackId ?? 0)
-        self.setDataInOutlet(webListData: webListData!)
+        if let webListData = webListData {
+            self.setDataInOutlet(webListData: webListData)
+        }
     }
     
     func setDataInOutlet(webListData: WebData) {
@@ -34,12 +36,12 @@ extension DetailViewController {
     
     @IBAction func deleteButtonTapped(_ sender: UIButton) {
         let refreshAlert = UIAlertController(title: SDConstant().delete, message: SDConstant().deleteAlertMessage, preferredStyle: UIAlertController.Style.alert)
-        refreshAlert.addAction(UIAlertAction(title: SDConstant().ok, style: .default, handler: { (action: UIAlertAction!) in
+        refreshAlert.addAction(UIAlertAction(title: SDConstant().ok, style: .default, handler: { (action: UIAlertAction) in
             if let object = self.webListData {
                 self.addDeletedObjectInUserDefault(webObjectId: object.trackId)
             }
         }))
-        refreshAlert.addAction(UIAlertAction(title: SDConstant().cancel, style: .cancel, handler: { (action: UIAlertAction!) in
+        refreshAlert.addAction(UIAlertAction(title: SDConstant().cancel, style: .cancel, handler: { (action: UIAlertAction) in
             refreshAlert .dismiss(animated: true, completion: nil)
         }))
         self.present(refreshAlert, animated: true, completion: nil)

@@ -55,9 +55,11 @@ extension ITuneSearchListViewController: UITableViewDelegate, UITableViewDataSou
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let detailScreen = self.storyboard?.instantiateViewController(withIdentifier: SDConstant().detailViewController) as! DetailViewController
-        detailScreen.webListData = self.webListData?[indexPath.row]
-        self.navigationController?.pushViewController(detailScreen, animated: true)
+       if let detailScreen = self.storyboard?.instantiateViewController(withIdentifier: SDConstant().detailViewController) as? DetailViewController {
+            detailScreen.webListData = self.webListData?[indexPath.row]
+            self.navigationController?.pushViewController(detailScreen, animated: true)
+        }
+       
     }
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {

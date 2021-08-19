@@ -5,6 +5,8 @@
 import Foundation
 import UIKit
 
+// Constant 
+
 class SDConstant{
     let searchUrl                     = "https://itunes.apple.com/search?term=jack+johnson&imit=100"
     let detailViewController          = "DetailViewController"
@@ -17,6 +19,8 @@ class SDConstant{
     let cancel                        = "Cancel"
     let staticImageUrl                = "https://is5-ssl.mzstatic.com/image/thumb/Purple125/v4/ec/f4/37/ecf4372b-b2c8-ee4c-b579-6ce9a4e94c1c/79e5918a-b9c3-447e-bc9e-3216ce8e007e_Apple_Consumer_1.png/392x696bb.png"
 }
+
+// Load image
 
 extension UIImageView {
     func load(urlString : String) {
